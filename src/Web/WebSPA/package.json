@@ -27,7 +27,7 @@
     "lint:ts": "tslint -c tslint.json Client/**/*.ts"
   },
   "dependencies": {
-    "@angular/animations": "^7.2.10",
+    "@angular/animations": "^7.2.16",
     "@angular/common": "^7.2.10",
     "@angular/compiler": "^7.2.10",
     "@angular/core": "^7.2.10",
