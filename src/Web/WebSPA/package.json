@@ -24,7 +24,9 @@
     "build:dev:watch": "npm run build:dev && ng build --watch",
     "build:prod": "ng build --prod --aot --extract-css",
     "lint:sass": "sass-lint -c .sass-lint.yml Client/**/*.scss --verbose",
-    "lint:ts": "tslint -c tslint.json Client/**/*.ts"
+    "lint:ts": "tslint -c tslint.json Client/**/*.ts",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@angular/animations": "^7.2.10",
@@ -44,7 +46,7 @@
     "file-loader": "2.0.0",
     "font-awesome": "4.7.0",
     "isomorphic-fetch": "2.2.1",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "ngx-toastr": "^9.0.2",
     "normalize.css": "8.0.0",
     "popper.js": "^1.14.4",
@@ -52,7 +54,8 @@
     "rxjs": "~6.3.3",
     "rxjs-compat": "~6.3.3",
     "webpack-dev-server": "3.1.14",
-    "zone.js": "^0.8.29"
+    "zone.js": "^0.8.29",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.6",
@@ -87,5 +90,6 @@
     "typescript": "^3.2.4",
     "url-loader": "1.1.1",
     "webpack": "^4.29.6"
-  }
+  },
+  "snyk": true
 }
